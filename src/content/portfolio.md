@@ -10,4 +10,4 @@ stack:
   - Netlify
 ---
 
-An application where users can request music to others while at an event, thus simplifying music requesting at an event
+My first professional web development portfolio in which I showcase projects I'm currently working on along with others I've worked on in the past.
