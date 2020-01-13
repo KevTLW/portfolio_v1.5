@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Particles from 'react-particles-js';
+import SEO from '../components/SEO';
 import Animation from '../components/Animation';
 import Home from '../components/Home';
 import Wave from '../components/Wave';
@@ -22,6 +23,7 @@ const App = () => {
 
   return (
     <>
+      <SEO />
       <Animation />
       <Particles className={styles.particles} params={particles} /> 
       <div style={{ display: animating ? 'none' : 'initial' }}>
