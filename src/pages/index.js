@@ -3,6 +3,7 @@ import Particles from 'react-particles-js';
 import Animation from '../components/Animation';
 import Home from '../components/Home';
 import Wave from '../components/Wave';
+import About from '../components/About';
 import particles from '../styles/particles.json';
 import styles from '../styles/base.module.css';
 
@@ -23,6 +24,7 @@ const App = () => {
       <div style={{ display: animating ? 'none' : 'initial' }}>
         <Home scrollRef={scrollRef} />
         <Wave scrollRef={scrollRef} />
+        <About />
       </div>
     </>
   );
