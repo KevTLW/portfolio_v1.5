@@ -1,0 +1,23 @@
+@value black, white from './base.module.css';
+
+.container {
+  background-color: black;
+  color: white;
+  padding: 1.5em 0.5em 1em;
+}
+
+.title {
+  margin-bottom: 1em;
+  margin-top: 0px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18.75em, 1fr));
+  grid-gap: 1em;
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+}
