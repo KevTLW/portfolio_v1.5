@@ -8,7 +8,7 @@ const Animation = () => {
     query {
       logo: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          fixed(width: 240) {
+          fixed(height: 240, width: 240) {
             ...GatsbyImageSharpFixed
           }
         }
