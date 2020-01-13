@@ -1,0 +1,130 @@
+@value black, white from './base.module.css';
+
+.container {
+  background-color: white;
+  color: black;
+  padding: 1.5em 0px;
+}
+
+.title {
+  font-size: 1.5em;
+  margin-bottom: 0.25em;
+  margin-top: 0px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.form {
+  display: grid;
+  column-gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0px auto;
+  width: 75%;
+}
+
+.form_left {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.form_right {
+  display: grid;
+  grid-template-rows: auto min-content;
+}
+
+@media screen and (max-width: 1024px) {
+  .form_left {
+    grid-area: 1 / 1 / 2 / -1;
+  }
+
+  .form_right {
+    grid-area: 2 / 1 / 3 / -1;
+  }
+  
+  .form_message {
+    height: 15em;
+  }
+  
+  .form_submit {
+    margin-bottom: 0px;
+  }
+}
+
+.label {
+  display: block;
+}
+
+.input {
+  background-color: #ebebeb;
+  border: none;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-top: 0.25em;
+  outline: none;
+  padding: 0.375em;
+  resize: none;
+  transition: 750ms;
+  width: 100%;
+}
+
+.input:focus {
+  background-color: #ffffff;
+  border-bottom: 2px solid black;
+  box-shadow: 0px 0px 0px 2px black;
+}
+
+.form_message .label {
+  display: grid;
+  grid-template-rows: max-content auto;
+  height: 100%;
+}
+
+.form_message .input {
+  border: 2px solid black;
+}
+
+.form_submit {
+  background-color: black;
+  border: 2px solid transparent;
+  border-radius: 5em;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  font-size: 0.875em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  outline: none;
+  padding: 0.375em 0.875em;
+  position: relative;
+  text-decoration: none;
+  transition: 750ms;
+  width: 100%;
+}
+
+.form_submit:focus {
+  border: 2px solid white;
+  box-shadow: 0px 0px 0px 2px black;
+}
+
+@media (hover: hover) {
+  .form_submit:hover {
+    border: 2px solid white;
+    box-shadow: 0px 0px 0px 2px black;
+  }
+}
+
+.form_submitted {
+  margin-bottom: 1em;
+  margin-top: 0px;
+  padding: 0px 1em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.form_error {
+  color: #b93241;
+  display: inline;
+  text-decoration: underline;
+}

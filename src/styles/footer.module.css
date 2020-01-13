@@ -1,0 +1,22 @@
+@value black, white from './base.module.css';
+
+.container {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2em 0px;
+}
+
+.text {
+  margin: 0px;
+}
+
+.icon {
+  margin: 0px 0.5em;
+  position: relative;
+  top: 2px;
+}
+
+.icon path {
+  fill: white;
+}

@@ -5,6 +5,8 @@ import Home from '../components/Home';
 import Wave from '../components/Wave';
 import About from '../components/About';
 import Projects from '../components/Projects';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 import particles from '../styles/particles.json';
 import styles from '../styles/base.module.css';
 
@@ -27,6 +29,8 @@ const App = () => {
         <Wave scrollRef={scrollRef} />
         <About />
         <Projects />
+        <Contact />
+        <Footer />
       </div>
     </>
   );
