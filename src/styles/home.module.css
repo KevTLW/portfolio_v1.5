@@ -1,0 +1,43 @@
+@value black, white from './base.module.css';
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.container {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.title {
+  font-size: 5em;
+  margin: 0px;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin: 0.25em;
+}
+
+.button {
+  animation: blink 750ms infinite alternate;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 0.5em;
+}
+
+.button:focus {
+  animation: none;
+}

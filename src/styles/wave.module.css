@@ -1,0 +1,25 @@
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.wave {
+  animation: slide-up 750ms 250ms forwards;
+  bottom: 0px;
+  position: absolute;
+}
+
+.wave svg {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .wave {
+    top: 0.25em;
+    position: relative;
+  }
+}
