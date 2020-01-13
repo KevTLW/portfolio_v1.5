@@ -1,0 +1,38 @@
+@value black, white from './base.module.css';
+
+.container {
+  background-color: black;
+  color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+}
+
+.logo {
+  transition: 750ms;
+}
+
+.text, .title {
+  margin: 0.25em; 
+}
+
+.link {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0px;
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  .logo:hover {
+    transform: rotate(15deg);
+  }
+}
