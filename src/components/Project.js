@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faCode } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Icon from './Icon';
 import styles from '../styles/project.module.css';
@@ -23,20 +23,20 @@ const Project = ({ delay, description, image, site, source, stack, title }) => (
         view code
       </a>
     ) : (
-        <button className={styles.link} disabled>
-          private source
+      <button className={styles.link} disabled>
+        private source
       </button>
-      )}
+    )}
     {site ? (
       <a aria-label={`Link to ${title}'s view`} className={styles.link} href={site} rel='noopener noreferrer' target='_blank'>
         view project
-        <FontAwesomeIcon className={styles.site} icon={faCode} />
+        <FontAwesomeIcon className={styles.site} icon={faChevronRight} />
       </a>
     ) : (
-        <button className={styles.link} disabled>
-          private view
+      <button className={styles.link} disabled>
+        private view
       </button>
-      )}
+    )}
   </li>
 );
 
